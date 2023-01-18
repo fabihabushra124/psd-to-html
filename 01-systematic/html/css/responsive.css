@@ -1,0 +1,100 @@
+/* For Teblet */
+@media (max-width: 870px) {
+  .inner-footer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 798px) {
+  .inner-hero h2 {
+    font-size: 60px;
+  }
+
+  .inner-content {
+    grid-template-columns: 1fr;
+  }
+
+  .child-content h2 {
+    margin-bottom: 30px;
+  }
+
+  .service {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    background-color: var(--icon-bg);
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .inner-copyright {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 690px) {
+  .inner-hero {
+    flex-direction: column;
+  }
+
+  .hero-details {
+    text-align: center;
+    margin: 30px 0 0 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .inner-top {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .mini-menue {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .search-bar {
+    width: 210px;
+  }
+
+  .inner-header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-area {
+    text-align: center;
+  }
+
+  .social-area {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .social-area ul {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .social-area ul li:first-child {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 490px) {
+  .inner-hero h2 {
+    font-size: 40px;
+  }
+
+  .inner-footer {
+    grid-template-columns: 1fr;
+  }
+}
