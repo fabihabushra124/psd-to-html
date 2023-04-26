@@ -1,0 +1,387 @@
+/* ##### Tablet CSS ##### */
+@media (max-width: 1200px) {
+  h2 {
+    font-size: 40px;
+  }
+
+  .wrapper {
+    padding: 0 100px;
+  }
+
+  .btn {
+    padding: 12px 32px;
+    font-size: 16px;
+  }
+
+  /* ###### Header ###### */
+  #header,
+  #header .wrapper,
+  .hero {
+    max-height: 1100px;
+  }
+
+  /* Navbar */
+  .navbar {
+    max-width: 100%;
+    left: 0;
+    right: 0;
+    padding: 32px 100px;
+  }
+
+  .navbar.scroll {
+    padding: 14px 100px;
+  }
+
+  /* Hero */
+  .hero {
+    flex-direction: column;
+    padding-top: 100px;
+  }
+
+  .hero .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .hero .left p {
+    max-width: 100%;
+  }
+
+  .hero .left .btn {
+    align-self: flex-start;
+  }
+
+  .hero .right img {
+    height: 630px;
+  }
+
+  .hero .achievements {
+    align-self: flex-start;
+    transform: translateX(38px);
+  }
+
+  .hero .card {
+    position: relative;
+    margin-bottom: 118px;
+  }
+
+  .hero .card.enrolled,
+  .hero .card.rating {
+    left: unset;
+    top: unset;
+    bottom: unset;
+  }
+
+  .hero .right {
+    position: absolute;
+    bottom: 0;
+  }
+
+  /* ##### Testimonials ##### */
+  .testimonials .flex {
+    flex-direction: column;
+    align-items: unset;
+    gap: 25px;
+  }
+
+  .testimonials .testimonial-card {
+    margin-bottom: 40px;
+  }
+
+  .testimonials .testimonial-card:nth-child(even) {
+    transform: translateX(0);
+  }
+
+  .testimonials .desktop-btn {
+    display: none;
+  }
+
+  .testimonials .right {
+    order: 1;
+  }
+
+  .testimonials .right p {
+    display: inline;
+  }
+
+  .testimonials .left {
+    order: 2;
+  }
+
+  .testimonials .mobile-btn {
+    display: block;
+    align-self: flex-end;
+    order: 3;
+  }
+
+  /* ###### Courses ###### */
+  .courses .course-cards {
+    flex-direction: column;
+    gap: 80px;
+    margin: 66px 0 50px 0;
+  }
+
+  .courses .course-card img {
+    width: 100%;
+  }
+
+  /* ###### Footer ###### */
+  #footer .links-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #footer .links-container .links:last-child {
+    grid-column: 1 / 3;
+  }
+
+  #footer form {
+    width: 85%;
+  }
+}
+
+@media (max-width: 930px) {
+  /* ###### Header ###### */
+  /* Navbar */
+  .navbar .menu-btn {
+    display: block;
+    cursor: pointer;
+  }
+
+  .navbar.scroll {
+    background-color: var(--violet-clr);
+  }
+
+  .navbar .links-container {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 150%;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-clr);
+    opacity: 0;
+    transition: all 500ms ease;
+  }
+
+  .navbar .links-container.active {
+    left: 0;
+    opacity: 1;
+  }
+
+  .navbar .links-container.active .nav-links {
+    flex-direction: column;
+  }
+
+  .navbar .links-container.active .nav-links li a {
+    font-size: 24px;
+  }
+
+  .navbar .links-container.active .close-btn {
+    display: block;
+    position: fixed;
+    right: 32px;
+    top: 60px;
+  }
+
+  .navbar .links-container.active .btn.dark {
+    background-color: var(--orange-clr);
+  }
+
+  /* Hero */
+  .hero .right img {
+    transform: translateX(90px);
+  }
+}
+
+@media (max-width: 784px) {
+  .wrapper {
+    padding: 0 32px;
+  }
+
+  /* ###### Header ###### */
+  /* Navbar */
+  .navbar {
+    padding: 32px;
+  }
+
+  .navbar.scroll {
+    padding: 14px 32px;
+  }
+
+  /* Hero */
+  #header,
+  #header .wrapper,
+  .hero {
+    max-height: 890px;
+  }
+
+  .hero .left h1 {
+    font-size: 36px;
+  }
+
+  .hero .right img {
+    height: 500px;
+    transform: translateX(40px);
+  }
+
+  .hero .achievements {
+    transform: translateX(0);
+  }
+
+  .hero .card {
+    height: 75px;
+    margin-bottom: 100px;
+  }
+
+  /* ##### Courses ##### */
+  .courses .course-card .info h3 {
+    font-size: 24px;
+  }
+
+  /* ##### App ##### */
+  .app .app-btns {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 640px) {
+  h2 {
+    font-size: 30px;
+  }
+
+  /* ##### Header ##### */
+  /* Hero */
+  .hero {
+    padding-top: 60px;
+  }
+
+  .hero .right {
+    overflow: hidden;
+  }
+
+  .hero .right img {
+    height: 450px;
+    transform: translateX(40px);
+  }
+
+  .hero .card {
+    margin-bottom: 50px;
+  }
+
+  .hero .card.enrolled {
+    width: 182px;
+  }
+
+  .hero .card.rating {
+    width: 160px;
+  }
+
+  .hero .card-content div span {
+    font-size: 30px;
+  }
+
+  .hero .card-content div img {
+    height: 35px;
+    width: 35px;
+  }
+
+  .hero .card-content p {
+    font-size: 14px;
+  }
+
+  /* ##### Testimonials ##### */
+  .testimonials .info h4 {
+    font-size: 18px;
+  }
+
+  .testimonials .info p {
+    font-size: 14px;
+  }
+
+  .testimonials .testimonial-card img {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* ##### Courses ##### */
+  .courses .wrapper {
+    padding: 0;
+  }
+
+  .courses .course-cards {
+    gap: 60px;
+    margin: 60px 0 50px 0;
+  }
+
+  .courses .btn {
+    margin-right: 32px;
+  }
+
+  /* ##### Footer ##### */
+  #footer {
+    text-align: center;
+  }
+
+  #footer .links-container {
+    grid-template-columns: 1fr;
+  }
+
+  #footer .links-container .links:last-child {
+    grid-column: 1 / 2;
+  }
+
+  #footer .links ul,
+  #footer .links .contacts {
+    margin-left: 0;
+  }
+
+  #footer .links {
+    position: relative;
+  }
+
+  #footer form {
+    width: 100%;
+  }
+
+  #footer input[type='submit'] {
+    position: absolute;
+    bottom: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #footer .copyright {
+    margin-top: 72px;
+  }
+}
+
+@media (max-width: 550px) {
+  .wrapper {
+    padding: 0 15px;
+  }
+
+  /* ###### Header ###### */
+  /* Navbar */
+  .navbar {
+    padding: 20px 15px;
+  }
+
+  .navbar.scroll {
+    padding: 14px 15px;
+  }
+
+  /* Hero */
+  .hero .right img {
+    height: 400px;
+    transform: translateX(80px);
+  }
+
+  /* ###### Courses ###### */
+  .courses .btn {
+    margin-right: 15px;
+  }
+}

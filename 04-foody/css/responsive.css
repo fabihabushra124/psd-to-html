@@ -1,0 +1,214 @@
+@media (max-width: 991px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  h4 {
+    font-size: 1.7rem;
+  }
+
+  h5 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .btn {
+    font-size: 18px;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  /* ##### Header ##### */
+  .banner {
+    background: url(../images/bg.png) no-repeat;
+    background-color: var(--bg-clr);
+    background-size: 100% 100%;
+  }
+
+  .banner-img {
+    display: none;
+  }
+
+  .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: none;
+    text-align: center;
+  }
+
+  /* ##### Best Sekker ##### */
+  .card-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  /* ##### Oriental & Chicken ##### */
+  .oriental {
+    background-size: 120% 110%;
+  }
+
+  .chicken {
+    background-size: 110% 82%;
+  }
+
+  .oriental-img {
+    margin-bottom: 30px;
+  }
+
+  .chicken-img {
+    margin-top: 50px;
+  }
+
+  .oriental-content,
+  .chicken-content {
+    max-width: 500px;
+    text-align: center;
+  }
+
+  .flex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* ##### Statistics ##### */
+  .counter-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .counter {
+    width: 170px;
+    height: 170px;
+  }
+
+  .counter p {
+    font-size: 1.2rem;
+  }
+
+  /* ##### Lenora ##### */
+  .lenora-content p {
+    font-size: 21px;
+  }
+
+  /* ##### Footer ##### */
+  .items-wrapper {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+  }
+
+  .item {
+    margin: 0;
+  }
+
+  .item p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3.8rem;
+  }
+
+  h2 {
+    font-size: 2.8rem;
+  }
+
+  h3 {
+    font-size: 2.3rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  h5 {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .btn {
+    font-size: 16px;
+  }
+
+  /* ##### Minimize Padding ##### */
+  .best-seller .oriental,
+  .chicken,
+  .statistics,
+  .lenora,
+  .subscribe {
+    padding: 40px 0;
+  }
+
+  #footer {
+    padding: 70px 0;
+  }
+
+  /* ##### Oriental & Chicken ##### */
+  .oriental-img,
+  .chicken-img {
+    width: 280px;
+    height: 280px;
+  }
+
+  /* ##### Statistics ##### */
+  .counter-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .counter {
+    width: 150px;
+    height: 150px;
+  }
+
+  .counter p {
+    font-size: 1rem;
+  }
+
+  /* ##### Lenora ##### */
+  .lenora-content p {
+    font-size: 18px;
+  }
+
+  /* ##### Subscribe ##### */
+  .subscribe form input[type='email'] {
+    font-size: 16px;
+  }
+
+  .subscribe form input[type='submit'] {
+    height: 45px;
+    font-weight: 500;
+  }
+
+  /* ##### Footer ##### */
+  .items-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .item {
+    text-align: center;
+  }
+
+  .first ul {
+    justify-content: center;
+  }
+}

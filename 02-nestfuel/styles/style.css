@@ -1,0 +1,918 @@
+/* =================== */
+/* Start Common Styles */
+/* =================== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+  /* Colors: */
+  --brown-clr: #6b615e;
+  --violet-clr: #5d3f6e;
+  --orange-clr: #ff9811;
+  --red-clr: #ac4055;
+  --blue-clr1: #123347;
+  --blue-clr2: #00657c;
+  --blue-clr3: #6c63ff;
+  --yellow-clr1: #f9d12b;
+  --yellow-clr2: #f7b521;
+  --white-clr1: #ffffff;
+  --white-clr2: #e3e3e3;
+  --black-clr1: #000000;
+  --black-clr2: #31312c;
+  --black-clr3: #444444;
+  --gray-clr1: #707070;
+  --gray-clr2: #818181;
+  --gray-clr3: #8f8f8f;
+  --gray-clr4: #c4c4c4;
+
+  /* Font/text values */
+  --font-family: Roboto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  font-size: 20px;
+}
+
+img {
+  object-fit: cover;
+}
+
+.container {
+  max-width: 1640px;
+}
+
+.big-h {
+  font-size: max(3.5rem, 4.9vw);
+  font-weight: 500;
+  letter-spacing: -4.42px;
+}
+
+.mid-h {
+  font-size: max(2.7rem, 2.4vw);
+  font-weight: 500;
+  letter-spacing: -2.21px;
+  color: var(--black-clr2);
+}
+
+.sm-h {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.white-btn {
+  background: var(--white-clr1);
+  border-radius: 0;
+  padding: 13px 40px;
+  font-weight: bold;
+  color: var(--blue-clr1);
+  text-transform: uppercase;
+}
+
+.white-btn:hover {
+  background: var(--white-clr2);
+}
+
+.icons {
+  display: flex;
+}
+
+.side-p {
+  padding: 0 4rem;
+}
+
+.whole-p {
+  padding: 4rem;
+}
+
+.mid-fsz {
+  font-size: 22px;
+}
+/* =================== */
+/* End Common Styles */
+/* =================== */
+
+/* =================== */
+/* Start Header */
+/* =================== */
+#header {
+  background: url(../images/header-bg/header-bg.png) no-repeat top right;
+  background-size: 50% 100%;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.nav-item {
+  padding: 0 20px;
+}
+
+.nav-link {
+  color: var(--blue-clr1);
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0 !important;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+}
+
+.nav-item:hover .nav-link,
+.nav-link.active {
+  border-bottom: 1px solid var(--blue-clr1);
+}
+
+.header-content {
+  max-width: 640px;
+  margin: 25px 0;
+  color: var(--black-clr1);
+}
+
+.left h1 {
+  color: var(--black-clr2);
+}
+
+.right {
+  position: relative;
+}
+
+.right-img {
+  position: relative;
+  width: 100%;
+}
+
+.right-img img {
+  width: 100%;
+}
+
+.right-img::before {
+  content: 'Mortgage \A as Benefit';
+  position: absolute;
+  white-space: pre; /* Activate line break */
+  right: 35px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: max(2.3rem, 3vw);
+  font-weight: 500;
+  max-width: 280px;
+  letter-spacing: -3.13px;
+  line-height: 1.2em;
+  color: var(--blue-clr1);
+}
+
+.play {
+  position: absolute;
+  bottom: -25px;
+  left: 60%;
+  transform: translateX(-60%);
+}
+
+#header .icons {
+  margin-top: 2rem;
+}
+
+#header .icons li {
+  margin-right: 30px;
+}
+
+#header .icons li i {
+  color: var(--blue-clr1);
+  cursor: pointer;
+}
+
+/* =================== */
+/* End Header */
+/* =================== */
+
+/* =================== */
+/* Start Main */
+/* =================== */
+/* Blue Tri Card */
+.blue-tri-cards {
+  background: var(--blue-clr1);
+  color: var(--white-clr1);
+}
+
+.blue-tri-cards h2 {
+  color: var(--white-clr1);
+}
+
+.blue-tri-cards .row {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.blue-tri-cards .card {
+  max-width: 351px;
+  height: 251px;
+  margin: 0 auto;
+  background: var(--blue-clr1);
+  border: none;
+  box-shadow: 0px 3px 26px #00000029;
+}
+
+.blue-tri-cards .card-title {
+  color: var(--yellow-clr2);
+}
+
+.blue-tri-cards .card-text {
+  color: var(--white-clr2);
+  margin-top: 1.5rem;
+}
+
+/* Cost Replace */
+.cost-replace .row {
+  max-width: 1344px;
+  margin: 2rem auto;
+}
+
+.cost-replace .sec {
+  text-align: center;
+  max-width: 398px;
+  margin: 1rem auto;
+}
+
+.cost-replace img {
+  height: 140px;
+  margin-bottom: 30px;
+}
+
+/* Mortgage */
+.mortgage .row > * {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.mortgage .orange-bg {
+  background: var(--yellow-clr2);
+  align-items: center;
+}
+
+.mortgage .orange-bg h2 {
+  color: var(--white-clr1);
+}
+
+.mortgage .content {
+  max-width: 536px;
+  padding: 2rem;
+}
+
+.mortgage .comment {
+  font-size: 26px;
+}
+
+.mortgage .comment strong {
+  line-height: 1.7em;
+}
+
+.mortgage img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Mortgage Benefit */
+.mortgage-benefit {
+  background: var(--white-clr2);
+}
+
+.mortgage-benefit .row {
+  max-width: 1640px;
+  margin: 2rem auto;
+}
+
+.mortgage-benefit .title {
+  color: var(--black-clr2);
+}
+
+.mortgage-benefit .title p {
+  line-height: 1.2em;
+  margin-top: 1.5rem;
+}
+
+.mortgage-benefit .img-box {
+  position: relative;
+  width: 100%;
+}
+
+.mortgage-benefit .img-box img {
+  width: 100%;
+}
+
+.mortgage-benefit .text {
+  position: absolute;
+  color: var(--white-clr1);
+  text-align: center;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 100;
+}
+
+/* Focused */
+.focused .title {
+  overflow: hidden;
+}
+
+.focused .title h2 {
+  max-width: 1364px;
+  margin: 0 auto;
+}
+
+.focused .title p {
+  max-width: 1088px;
+  margin: 20px auto;
+  color: var(--gray-clr1);
+}
+
+.focused .row {
+  max-width: 1088px;
+  margin: 40px auto;
+}
+
+.focused .sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+
+.focused .sec p:last-child {
+  margin-bottom: 0;
+}
+
+/* fin-well */
+.fin-well .sec {
+  text-align: center;
+  max-width: 398px;
+  margin: 0 auto;
+  padding: 40px 30px;
+}
+
+.fin-well .sec h5 {
+  margin: 15px 0 30px 0;
+  color: var(--black-clr2);
+}
+
+.fin-well .sec p {
+  color: var(--gray-clr1);
+}
+
+/* mort-ben */
+.mort-ben .title {
+  position: relative;
+  height: 533px;
+  width: 100%;
+  background: url(../images/mortgage-benifit-bg.png) no-repeat center center /
+    cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mort-ben .content {
+  position: relative;
+  text-align: center;
+}
+
+.mort-ben .content p {
+  margin-top: 30px;
+}
+
+.mort-ben .detail-one {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background: var(--white-clr2);
+}
+
+.mort-ben .detail-one .row {
+  max-width: 1088px;
+  margin: 0 auto;
+}
+
+.mort-ben .detail-two {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.mort-ben .detail-two .row {
+  max-width: 1380px;
+  margin: 0 auto;
+}
+
+/* Digital Content */
+.digital-content {
+  max-width: 1480px;
+  margin: 0 auto;
+}
+
+.digital-content .row h3 {
+  color: var(--blue-clr1);
+}
+
+.digital-content .row ul i {
+  color: var(--blue-clr1);
+  margin-right: 16px;
+}
+
+.digital-content .row ul li {
+  display: flex;
+}
+
+.digital-content .row ul li p {
+  color: var(--black-clr2);
+}
+
+/* Get-Start */
+.get-start {
+  background-color: var(--blue-clr1);
+  color: var(--white-clr1);
+}
+
+.get-start h2 {
+  color: var(--white-clr1);
+  margin-bottom: 1.5rem;
+}
+
+.get-start .grid-row {
+  max-width: 1480px;
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.get-start .grid-col {
+  text-align: center;
+}
+
+.get-start .grid-col img {
+  margin-bottom: 2rem;
+}
+
+/* Testimonial */
+.testimonial .owl-carousel {
+  max-width: 1140px;
+  margin: 3rem auto 0 auto;
+}
+
+.testimonial .owl-carousel .owl-stage-outer {
+  padding: 10px;
+}
+
+.testimonial .owl-item {
+  padding: 20px;
+  position: relative;
+  height: 357px;
+  box-shadow: 0px 3px 6px #00000045;
+  border: 1px solid var(--white-clr2);
+  border-radius: 5px;
+}
+
+.testimonial .owl-carousel .item .comment h6,
+.testimonial .owl-carousel .item .comment p {
+  font-size: 16px;
+}
+
+.testimonial .owl-carousel img {
+  position: absolute;
+  bottom: 20px;
+}
+
+.testimonial .owl-carousel .owl-nav button.owl-prev,
+.testimonial .owl-carousel .owl-nav button.owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 53px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  box-shadow: 0px 3px 6px #00000045;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--white-clr1);
+}
+
+.testimonial .owl-carousel .owl-nav button.owl-prev {
+  left: -45px;
+}
+
+.testimonial .owl-carousel .owl-nav button.owl-next {
+  right: -45px;
+}
+
+.testimonial .owl-carousel .owl-nav button.owl-prev:hover,
+.testimonial .owl-carousel .owl-nav button.owl-next:hover {
+  background: none;
+  color: var(--black-clr1);
+}
+
+/* Help */
+.help .first {
+  max-width: 1392px;
+  margin: 0 auto;
+}
+
+.help .save h3 {
+  color: var(--blue-clr1);
+  margin-bottom: 1rem;
+}
+
+.help .save li {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.help .save li i {
+  color: var(--blue-clr1);
+  margin-right: 15px;
+}
+
+.help .save li p {
+  color: var(--black-clr2);
+}
+
+.help .second {
+  max-width: 1151px;
+  margin: 2rem auto;
+  align-items: center;
+}
+
+.help .second .box {
+  color: var(--white-clr1);
+  background: var(--blue-clr1);
+  border-radius: 24px;
+  padding: 60px 40px;
+}
+
+.help .second .box ul li {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.help .second .box ul li p {
+  font-size: 16px;
+  margin-left: 13px;
+}
+
+.help .second > .img {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.help .second .circle img {
+  margin: 10px;
+}
+
+.help .second .circle {
+  border: 5px dashed var(--blue-clr1);
+  border-radius: 50%;
+}
+
+/* FAQ */
+.faq .faq-box {
+  max-width: 1151px;
+  margin: 2rem auto;
+}
+
+.faq .buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+
+.faq .buttons h4 {
+  text-transform: uppercase;
+  color: #bababa;
+  cursor: pointer;
+  margin-right: 15px;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+}
+
+.faq .buttons h4.active,
+.faq .buttons h4:hover {
+  color: var(--blue-clr1);
+  border-bottom: 1px solid var(--blue-clr1);
+}
+
+.faq .faq-list {
+  margin-top: 5rem;
+}
+
+.faq .faq-item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #bfbfbf;
+  padding: 20px 0;
+}
+
+.faq .faq-item p {
+  font-size: 16px;
+  color: var(--gray-clr2);
+  margin: 0;
+  display: none;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+}
+
+.faq .faq-item.active p {
+  display: block;
+}
+
+.faq .toggler {
+  display: flex;
+  align-items: center;
+}
+
+/* Plus Minus Toggler */
+.closed .vertical {
+  transition: all 0.5s ease-in-out;
+  transform: rotate(-90deg);
+}
+
+.closed .horizontal {
+  transition: all 0.5s ease-in-out;
+  transform: rotate(-90deg);
+  opacity: 1;
+}
+
+.opened {
+  opacity: 1;
+}
+
+.opened .vertical {
+  transition: all 0.5s ease-in-out;
+  transform: rotate(90deg);
+}
+
+.opened .horizontal {
+  transition: all 0.5s ease-in-out;
+  transform: rotate(90deg);
+  opacity: 0;
+}
+
+.circle-plus .circle {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  border: solid 1px var(--gray-clr2);
+  cursor: pointer;
+}
+
+.circle-plus .circle .horizontal {
+  position: absolute;
+  background-color: var(--gray-clr2);
+  width: 15px;
+  height: 1px;
+  left: 50%;
+  margin-left: -7.5px;
+  top: 50%;
+  margin-top: -0.5px;
+}
+
+.circle-plus .circle .vertical {
+  position: absolute;
+  background-color: var(--gray-clr2);
+  width: 1px;
+  height: 15px;
+  left: 50%;
+  margin-left: -0.5px;
+  top: 50%;
+  margin-top: -7.5px;
+}
+
+/* =================== */
+/* End Main */
+/* =================== */
+
+/* =================== */
+/* Start Footer */
+/* =================== */
+footer .inner {
+  max-width: 1151px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .inner p {
+  margin: 0;
+}
+
+footer .contact {
+  color: var(--white-clr1);
+  background: var(--black-clr2);
+  border: var(--gray-clr1);
+}
+
+footer .contact ul li {
+  margin-left: 60px;
+}
+
+footer .contact ul li:first-child {
+  margin-left: 0;
+}
+
+footer .copyright {
+  color: var(--black-clr2);
+  background: var(--white-clr2);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* =================== */
+/* End Footer */
+/* =================== */
+/* @media (max-width: 1700px) {
+  #header h1 {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 1560px) {
+  #header h1 {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 1430px) {
+  #header h1 {
+    font-size: 55px;
+  }
+} */
+
+@media (max-width: 1200px) {
+  #header {
+    background: none;
+  }
+
+  .mortgage .one {
+    order: 1;
+  }
+
+  .mortgage .two {
+    order: 2;
+  }
+
+  .mortgage .three {
+    order: 3;
+  }
+
+  .mortgage .four {
+    order: 4;
+  }
+
+  .get-start .grid-row {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 992px) {
+  .help .second .line {
+    display: none;
+  }
+
+  .help .second .circle {
+    width: 400px;
+    margin: 2rem auto;
+  }
+
+  #one {
+    order: 1;
+  }
+
+  #two {
+    order: 2;
+  }
+
+  #three {
+    order: 3;
+  }
+
+  #four {
+    order: 4;
+  }
+
+  #five {
+    order: 5;
+  }
+
+  #six {
+    order: 6;
+  }
+}
+
+@media (max-width: 768px) {
+  .get-start .grid-row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  footer .inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer .icons {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 650px) {
+  p {
+    font-size: 18px;
+  }
+
+  .side-p {
+    padding: 0 2rem;
+  }
+
+  .whole-p {
+    padding: 2rem;
+  }
+
+  .mid-fsz {
+    font-size: 20px;
+  }
+
+  .navbar .navbar-brand img {
+    width: 165px;
+  }
+
+  .blue-tri-cards .card-text {
+    margin-top: 0;
+  }
+
+  .testimonial .owl-carousel .owl-nav button.owl-prev,
+  .testimonial .owl-carousel .owl-nav button.owl-next {
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .help .second .box {
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .side-p {
+    padding: 0 1rem;
+  }
+
+  .whole-p {
+    padding: 2rem 1rem;
+  }
+
+  #header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .right-img::before {
+    right: 15px;
+  }
+
+  .play {
+    width: 60px;
+    bottom: -20px;
+  }
+
+  .help .second .box {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 350px) {
+  .get-start .grid-row {
+    grid-template-columns: 1fr;
+  }
+}
